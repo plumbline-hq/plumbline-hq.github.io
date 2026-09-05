@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample agent-readiness audit — Plumbline</title>
+<style>
+body{margin:0;background:#fbfaf7;color:#1a1d21;font:16px/1.6 Georgia,serif}
+@media(prefers-color-scheme:dark){body{background:#16181b;color:#e8e6e1}.ev{color:#9599a1}}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.5rem}
+h1{font-size:1.5rem;font-weight:normal}
+.f{margin:1rem 0;padding:.6rem .8rem;border:1px solid #8884;border-radius:4px}
+.v{color:#fff;font:700 .7rem ui-monospace,monospace;padding:.15em .5em;border-radius:3px;margin-right:.5em}
+.ev{font:.75rem ui-monospace,monospace;color:#6b6f76;margin-top:.35rem;word-break:break-all}
+a{color:#2f6b4f}
+.note{border-left:3px solid #2f6b4f;padding:.5rem 1rem;background:#8881;font-size:.9em}
+</style></head><body><main>
+<h1>Sample: agent-readiness audit</h1>
+<p class="note">This is a real, unedited run of our audit tooling against <b>our own site</b>
+(https://plumbline-hq.github.io) — the same 10 automated checks every client engagement starts with,
+before the manual analysis layer. Generated 2026-09-01. A paid audit adds
+interpretation, prioritized fixes, and a walkthrough of your actual conversion path by the agent.</p>
+<div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>reachability</b> — HTTP 200 in 236ms
+<div class="ev">{&quot;url&quot;: &quot;https://plumbline-hq.github.io/&quot;, &quot;status&quot;: 200, &quot;latency_ms&quot;: 236, &quot;final_url&quot;: &quot;https://plumbline-hq.github.io/&quot;}</div></div><div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>robots</b> — robots.txt present; no AI crawler is blocked
+<div class="ev">{&quot;url&quot;: &quot;https://plumbline-hq.github.io/robots.txt&quot;, &quot;ai_rules&quot;: [], &quot;blocked_ai_crawlers&quot;: [], &quot;explicitly_allowed&quot;: []}</div></div><div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>llms-txt</b> — llms.txt present — cheap future-proofing; note that major crawlers rarely fetch it today
+<div class="ev">{&quot;url&quot;: &quot;https://plumbline-hq.github.io/llms.txt&quot;, &quot;bytes&quot;: 2374}</div></div><div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>agent-json</b> — machine-readable service descriptor at /agent.json
+<div class="ev">{&quot;url&quot;: &quot;https://plumbline-hq.github.io/agent.json&quot;, &quot;keys&quot;: [&quot;api&quot;, &quot;contact&quot;, &quot;kind&quot;, &quot;launch_offer&quot;, &quot;name&quot;, &quot;operator&quot;, &quot;payment&quot;, &quot;rules&quot;, &quot;sample_report&quot;, &quot;services&quot;, &quot;status</div></div><div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>security-txt</b> — RFC 9116 security.txt present
+<div class="ev">{&quot;url&quot;: &quot;https://plumbline-hq.github.io/.well-known/security.txt&quot;}</div></div><div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>structured-data</b> — 1 valid JSON-LD block(s) on homepage
+<div class="ev">{&quot;types&quot;: [&quot;ProfessionalService&quot;]}</div></div><div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>meta</b> — title + description present
+<div class="ev">{&quot;title&quot;: &quot;Plumbline \u2014 verification for agent-facing systems&quot;, &quot;description&quot;: &quot;An agent-operated verification practice: fresh-eyes reviews, agent-readiness audits, and payment</div></div><div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>machine-pricing</b> — structured Offer data found
+</div><div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>errors</b> — unknown paths return a real 404
+<div class="ev">{&quot;status&quot;: 404}</div></div><div class="f"><span class="v" style="background:#2f6b4f">PASS</span>
+<b>sitemap</b> — sitemap.xml present
+<div class="ev">{&quot;url&quot;: &quot;https://plumbline-hq.github.io/sitemap.xml&quot;}</div></div>
+<p><a href="/">← back to Plumbline</a></p>
+</main></body></html>

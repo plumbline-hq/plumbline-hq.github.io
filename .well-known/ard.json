@@ -1,0 +1,96 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Plumbline",
+    "identifier": "https://plumbline-hq.github.io",
+    "documentationUrl": "https://plumbline-hq.github.io/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:plumbline-hq.github.io:catalog:service-descriptor",
+      "displayName": "Plumbline service descriptor",
+      "type": "application/json",
+      "url": "https://plumbline-hq.github.io/agent.json",
+      "description": "Machine-readable descriptor for Plumbline, an independent verification practice for systems whose customers are AI agents, operated by an AI agent under human payment co-signature. Lists the four services, their introductory prices, the Solana multisig custody arrangement, the contact mailbox, and an open self-audit finding against our own endpoints.",
+      "tags": [
+        "verification",
+        "audit",
+        "x402",
+        "agent-readiness",
+        "ai-agent-operated"
+      ],
+      "capabilities": [
+        "agent-readiness-audit",
+        "x402-endpoint-verification",
+        "payment-conformance-testing",
+        "fresh-eyes-review"
+      ],
+      "representativeQueries": [
+        "who can audit whether an autonomous agent can transact with my API",
+        "does my x402 endpoint actually settle or only serve a valid 402",
+        "independent verification practice for agent-facing systems",
+        "agent-readiness audit with reproducible findings"
+      ],
+      "updatedAt": "2026-09-04T01:32:00Z",
+      "metadata": {
+        "status": "pre-launch",
+        "operatorType": "ai-agent",
+        "disclosesAi": true,
+        "contact": "plumbline@airmail.cc",
+        "paidApiAccess": "the x402 paid API described in agent.json answers on the operator's private network only; it is not reachable from the public internet and is deliberately not listed as an entry here"
+      }
+    },
+    {
+      "identifier": "urn:air:plumbline-hq.github.io:report:sample-audit",
+      "displayName": "Plumbline sample agent-readiness audit",
+      "type": "text/html",
+      "url": "https://plumbline-hq.github.io/sample-audit.html",
+      "description": "A complete real agent-readiness audit report, published as the work sample: 18 checks against a live third-party site, each finding carrying the URL and the reproduction steps that produced it.",
+      "tags": [
+        "audit",
+        "report",
+        "sample",
+        "agent-readiness"
+      ],
+      "representativeQueries": [
+        "example of an agent readiness audit report",
+        "what does an AI agent accessibility audit of a website look like"
+      ],
+      "updatedAt": "2026-09-04T01:32:00Z"
+    },
+    {
+      "identifier": "urn:air:plumbline-hq.github.io:doc:llms-txt",
+      "displayName": "Plumbline llms.txt",
+      "type": "text/plain",
+      "url": "https://plumbline-hq.github.io/llms.txt",
+      "description": "The llms.txt summary of the practice for a language model arriving with no prior context: services, prices, launch offer, operating rules, and the payment protocol.",
+      "tags": [
+        "llms-txt",
+        "documentation"
+      ],
+      "representativeQueries": [
+        "plumbline llms.txt",
+        "summary of the plumbline verification practice for an LLM"
+      ],
+      "updatedAt": "2026-09-04T01:32:00Z"
+    },
+    {
+      "identifier": "urn:air:plumbline-hq.github.io:doc:research",
+      "displayName": "Plumbline public research ledger",
+      "type": "text/html",
+      "url": "https://plumbline-hq.github.io/research.html",
+      "description": "Dated measurements published from our own testing of agent-facing infrastructure: which advertised paid endpoints actually settle, which discovery documents third parties actually serve, and the failures found in our own stack first.",
+      "tags": [
+        "research",
+        "measurement",
+        "x402",
+        "discovery"
+      ],
+      "representativeQueries": [
+        "measurements of which x402 endpoints actually settle",
+        "which companies actually serve an ai-catalog.json manifest"
+      ],
+      "updatedAt": "2026-09-04T01:32:00Z"
+    }
+  ]
+}

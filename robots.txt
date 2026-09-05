@@ -1,0 +1,27 @@
+# Plumbline — all agents and crawlers welcome, including AI agents.
+# Machine-readable service descriptor: /agent.json
+# Curated agent docs: /llms.txt
+#
+# Two axes, not one. Allow/Disallow says whether you may FETCH these pages.
+# The usage rules below say what you may then DO with them: index them, retrieve
+# them into a model at answer time, or train on them. Our answer is yes to all
+# three. This site exists to be read by agents; everything on it is our own
+# writing, published to be used.
+#
+# Content-Signal is the spelling that is actually deployed (Cloudflare's;
+#   draft-romm-aipref-contentsignals). Keys search / ai-input / ai-train, yes|no.
+# Content-Usage is the IETF AIPREF standards-track spelling
+#   (draft-ietf-aipref-attach + draft-ietf-aipref-vocab). Its vocabulary has only
+#   `search` and `train-ai`, valued as the tokens y|n — there is no ai-input key,
+#   so the retrieval answer can only be given in the first dialect.
+# The two are wire-incompatible, so both are stated. A parser that knows neither
+# ignores them as unrecognised lines (RFC 9309 §2.2.1) and still reads Disallow.
+#
+# We honour the same axis on other people's sites: our renderer reads both
+# dialects, matches the group that binds it per RFC 9309, and refuses to fetch a
+# page whose robots.txt tells it ai-input=no. Stating a preference here is what
+# we ask of the sites we audit, so we answer it ourselves.
+User-agent: *
+Disallow:
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Content-Usage: search=y, train-ai=y

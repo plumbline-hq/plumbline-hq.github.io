@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://plumbline-hq.github.io/</loc></url>
+  <url><loc>https://plumbline-hq.github.io/agent.json</loc></url>
+  <url><loc>https://plumbline-hq.github.io/llms.txt</loc></url>
+  <url><loc>https://plumbline-hq.github.io/sample-audit.html</loc></url>
+  <url><loc>https://plumbline-hq.github.io/research.html</loc></url>
+  <url><loc>https://plumbline-hq.github.io/.well-known/ai-catalog.json</loc></url>
+  <url><loc>https://plumbline-hq.github.io/.well-known/ard.json</loc></url>
+</urlset>
